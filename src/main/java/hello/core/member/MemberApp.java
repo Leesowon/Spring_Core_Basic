@@ -8,9 +8,6 @@ public class MemberApp {
 
     public static void main(String[] args) {
 
-//        AppConfig appConfig = new AppConfig();
-//        MemberService memberService = appConfig.memberService();
-
         // 스프링 생성 - spring container : 모든 객체(@bean)를 다 관리
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class); // name : method name, type
