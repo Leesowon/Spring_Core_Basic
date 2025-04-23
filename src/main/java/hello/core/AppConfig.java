@@ -11,14 +11,6 @@ import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-// 앱에 대한 환경 구성 : 앱의 실제 동작에서 필요한 구현 객체를 생성하고
-// 연결하는 책임을 가지는 별도의 클래스
-// 객체의 연결과 생성
-
-// @Bean MemberService -> new MemoryMemberRepository()
-// @Bean OrderService -> new MemoryMemberRepository()
-// 이러면 싱글톤이 깨지는가..? -> test
-
 @Configuration // APP 설정정보, 구성정보
 public class AppConfig {
 
